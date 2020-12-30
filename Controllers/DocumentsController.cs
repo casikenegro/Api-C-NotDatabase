@@ -34,6 +34,11 @@ namespace ApiDocuments.Controllers
         {
             documentsDL = new DocumentsDL("Documents.dat");
             apiKeyDL = new ApiKeyDL("api_key.dat");
+            if (!Directory.Exists(path))
+            {
+              
+            }
+
 
         }
         [HttpGet("{key}")]
