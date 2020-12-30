@@ -36,7 +36,7 @@ namespace ApiDocuments.Controllers
             apiKeyDL = new ApiKeyDL("api_key.dat");
             if (!Directory.Exists(path))
             {
-              
+                Directory.CreateDirectory(path);
             }
 
 
